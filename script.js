@@ -2,7 +2,7 @@ document.addEventListener("click", ClickHandler);
 
 function ClickHandler()
 {
-  var eln = event.target;
+  var eln = Event.target;
 
   if(eln.nodeName == "BUTTON")
   {
@@ -35,6 +35,10 @@ function ClickHandler()
           //
           LoadPerson(currentItem);
       }
+  }
+  else if(eln.nodeName == "A")
+  {
+    alert("haha");
   }
 }
 
@@ -104,3 +108,4 @@ function LoadPerson(person)
     job.textContent = item.job;
     info.textContent = item.text;
 }
+

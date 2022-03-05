@@ -1,0 +1,44 @@
+            <!-- ======= Why Us Section ======= -->
+            <section id="why" class="why">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Why Choose Us?</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 icon-box">
+                            <div class="card xalert-primary btn-primary text-dark shadow zoom">
+                                <div class="card-body text-center">
+                                    <h5>Skilled Instructors</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 icon-box">
+                            <div class="card xalert-primary btn-primary text-dark shadow zoom">
+                                <div class="card-body text-center">
+                                    <h5>Online Classes</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 icon-box">
+                            <div class="card xalert-primary btn-primary text-dark shadow zoom">
+                                <div class="card-body text-center">
+                                    <h5>Home Projects</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 icon-box">
+                            <div class="card xalert-primary btn-primary text-dark shadow zoom">
+                                <div class="card-body text-center">
+                                    <h5>Book Library</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>
+            </section><!-- End Why Us Section --> 
