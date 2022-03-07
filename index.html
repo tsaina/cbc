@@ -61,9 +61,35 @@
         <!-- ======= Hero Section ======= -->
         <section id="hero">
             <div class="hero-container">
-                <h1>Welcome to Comptia</h1>
-                <h2>We are team of talented designers making websites with Bootstrap</h2>
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                <div class="owl-header owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/c4.jpg" alt="">
+                        <div class="slidercontent">
+                            <h2>First Slider Heading Text</h2>
+                            <h4>Creating unique experiences</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore nam, omnis voluptate unde odit itaque perferendis debitis ab illum voluptas impedit numquam, sit deserunt?</p>
+                            <button class="btn btn-sm btn-outline-danger">More Details</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/c5.jpg" alt="">
+                        <div class="slidercontent">
+                            <h2>Second Slider Heading Text</h2>
+                            <h4>Creating unique experiences</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ipsa vitae dicta, voluptate aut dolorum, enim ducimus et excepturi itaque fugiat vero odit nemo eaque!</p>
+                            <button class="btn btn-sm btn-outline-danger">More Details</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/c6.jpg" alt="">
+                        <div class="slidercontent">
+                            <h2>Third Slider Heading Text</h2>
+                            <h4>Creating unique experiences</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem, nisi blanditiis consequuntur ipsum tempore neque atque asperiores ullam repudiandae inventore maiores, sapiente et quia?</p>
+                            <button class="btn btn-sm btn-outline-danger">More Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- ======= Hero Section ======= -->
@@ -111,7 +137,7 @@
                     </div>
 
                     <div class="row slider justify-content-center mt-2">
-                        <div class="owl-carousel">
+                        <div class="owl-featured owl-carousel owl-theme">
                             <div class="card slider-card icon-box rounded shadow">
                                 <img class="zoom rounded-top" src="images/students.jpg" alt="x">
                                 <div class="card-body justify-content-center align-items-center">
@@ -167,16 +193,42 @@
         <script src="js/main.js"></script>
         <script>
             $(document).ready(function(){
-                $('.owl-carousel').owlCarousel({
+                $('.owl-header').owlCarousel({
+                    loop:true,
+                    margin:0,
+                    responsiveClass:true,
+                    // center:true,
+                    nav:true,
+                    // navText:[
+                    //     "<i class='bi bi-chevron-compact-left'></i>",
+                    //     "<i class='bi bi-chevron-compact-right'></i>"
+                    // ],
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    autoplayHoverPause:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                        },
+                        600:{
+                            items:1,
+                        },
+                        1000:{
+                            items:1,
+                        }
+                    }
+                })
+                
+                $('.owl-featured').owlCarousel({
                     loop:true,
                     margin:10,
                     responsiveClass:true,
                     // center:true,
-                    nav:true,
-                    navText:[
-                        "<i class='bi bi-chevron-compact-left'></i>",
-                        "<i class='bi bi-chevron-compact-right'></i>"
-                    ],
+                    // nav:true,
+                    // navText:[
+                    //     "<i class='bi bi-chevron-compact-left'></i>",
+                    //     "<i class='bi bi-chevron-compact-right'></i>"
+                    // ],
                     autoplay:true,
                     autoplayTimeout:5000,
                     autoplayHoverPause:true,
