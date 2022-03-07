@@ -171,6 +171,8 @@ section {
 */
 .navbar {
   padding: 0;
+  /* position: absolute;
+  right: 20px; */
 }
 .navbar ul {
   margin: 0;
@@ -413,12 +415,12 @@ section {
   color: #ffffff;
   margin-left: 100px;
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
 }
 .owl-item.active .slidercontent{
   margin-left: 0px;
   opacity: 1;
-  transition: all 0.8s ease;
+  transition: all 0.9s ease;
 }
 .slidercontent h2{
   font-size: 54px;
@@ -534,7 +536,173 @@ section {
   color: #70b9b0;
 }
  */
-  
+/*--------------------------------------------------------------
+# Our Team
+--------------------------------------------------------------*/
+.team .member {
+  text-align: center;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  background: #fff;
+}
+.team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+.team .member .social {
+  margin-top: 15px;
+}
+.team .member .social a {
+  color: #92cac3;
+  transition: 0.3s;
+}
+.team .member .social a:hover {
+  color: #3c8b81;
+}
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+ /*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact .contact-about h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #70b9b0;
+}
+.contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+  color: #888;
+}
+.contact .social-links {
+  padding-bottom: 20px;
+}
+.contact .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: #fff;
+  color: #70b9b0;
+  line-height: 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #70b9b0;
+}
+.contact .social-links a:hover {
+  background: #70b9b0;
+  color: #fff;
+}
+.contact .info {
+  color: #777;
+}
+.contact .info i {
+  font-size: 32px;
+  color: #70b9b0;
+  float: left;
+  line-height: 1;
+}
+.contact .info p {
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.contact .php-email-form button[type=submit] {
+  background: #70b9b0;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background: #92cac3;
+}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ 
   
   
   
@@ -566,6 +734,7 @@ section {
 .slider .owl-item.active.center .slider-card{
   transform: scale(1.15);
   opacity: 1;
+  
   /* background: #e43a15;  fallback for old browsers */
   /* background: -webkit-linear-gradient(to right, #e65245, #e43a15);  Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(to right, #e65245, #e43a15); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -573,7 +742,7 @@ section {
 }
 .slider-card{
   background-color: #fff;
-  margin: 50px 15px 90px 15px;
+  /* margin: 50px 15px 90px 15px; */
   opacity: 1;
   transition: all 0.3s;
   /* border-radius: 5px;
