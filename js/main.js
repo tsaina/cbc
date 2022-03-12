@@ -76,7 +76,7 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('#header')
+  var selectHeader = select('#header');
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -89,10 +89,25 @@
     onscroll(document, headerScrolled)
   }
 
+  // Toggle .header-scrolled class to #header when page is scrolled
 
-// Toggle .header-scrolled class to #header when page is scrolled
+/*   var aboutSelector = document.querySelectorAll('.about-row');
+  if (aboutSelector) {
+    const centerAbout = () => {
+      if (window.matchMedia("(max-width: 576)").matches) {
+        aboutSelector.classList.remove('justify-content-center');
+      } else {
+        aboutSelector.classList.add('justify-content-center');
+      }
+    }
+    window.addEventListener('load', centerAbout);
+    onscroll(document, centerAbout);
+  }
+ */
 
-var selectAbout = document.querySelectorAll('.slider-card')
+// Toggle animation class to #header when page is scrolled
+
+var selectAbout = document.querySelectorAll('.slider-card');
   if (selectAbout) {
     const aboutScrolled = () => {
       selectAbout.forEach(function(x){
@@ -105,6 +120,23 @@ var selectAbout = document.querySelectorAll('.slider-card')
     }
     window.addEventListener('load', aboutScrolled)
     onscroll(document, aboutScrolled)
+  }
+
+// Toggle phone margins class to #header when page is scrolled
+
+var selectMember = document.querySelectorAll('.member');
+  if (selectMember) {
+    const memberMargin = () => {
+      selectMember.forEach(function(x){
+        if (window.matchMedia("(max-width: 576)").matches) {
+          x.classList.remove('mb-2')
+        } else {
+          x.classList.add('mb-2')
+        }
+      })
+    }
+    window.addEventListener('load', memberMargin)
+    onscroll(document, memberMargin)
   }
 
   /**

@@ -539,16 +539,8 @@ section {
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
-.team .member {
-  text-align: center;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
-  background: #fff;
-}
-.team .member img {
+.team .member img{
   max-width: 60%;
-  border-radius: 50%;
-  margin: 0 0 30px 0;
 }
 .team .member h4 {
   font-weight: 700;
@@ -566,6 +558,17 @@ section {
   font-style: italic;
   color: #aaaaaa;
 }
+/* .team .member { */
+  /* text-align: center; */
+  /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
+  /* padding: 30px 20px; */
+  /* background: #fff; */
+/* } */
+/* .team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
 .team .member .social {
   margin-top: 15px;
 }
@@ -579,7 +582,7 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+} */
  /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
