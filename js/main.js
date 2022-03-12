@@ -95,6 +95,24 @@
     onscroll(document, headerScrolled)
   }
 
+
+// Toggle .header-scrolled class to #header when page is scrolled
+
+var selectAbout = document.querySelectorAll('.slider-card')
+  if (selectAbout) {
+    const aboutScrolled = () => {
+      selectAbout.forEach(function(x){
+        if (window.scrollY > 550) {
+          x.classList.add('animate__animated', 'animate__fadeInUp')
+        } else {
+          x.classList.remove('animate__animated', 'animate__fadeInUp')
+        }
+      })
+    }
+    window.addEventListener('load', aboutScrolled)
+    onscroll(document, aboutScrolled)
+  }
+
   /**
    * Back to top button
    */
@@ -162,7 +180,7 @@
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
+/*   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -186,18 +204,18 @@
     }
 
   });
-
+ */
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
+/*   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
-
+ */
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+/*   new Swiper('.portfolio-details-slider', {
     speed: 400,
     autoplay: {
       delay: 5000,
@@ -209,7 +227,7 @@
       clickable: true
     }
   });
-
-})()
+ */
+})();
 
 
