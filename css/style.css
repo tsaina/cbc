@@ -424,7 +424,6 @@ section {
 }
 .slidercontent h2{
   font-size: 54px;
-  /* font-weight: 700; */
   text-transform: uppercase;
 }
 .slidercontent h4{
@@ -466,12 +465,10 @@ section {
     background-attachment: fixed;
   }
 }
-@media (max-width: 768px) {
-  #hero h2 {
-    font-size: 28px;
-    /* line-height: 36px; */
-    /* font-size: 45px; */
-    /* font-weight: 700; */
+@media (max-width: 576px) {
+/*   #hero h2 {
+    background-color: red;
+    font-size: 18px;
     text-transform: uppercase;
     }
   #hero h2 {
@@ -479,7 +476,46 @@ section {
     line-height: 24px;
     margin-bottom: 30px;
   }
-}
+ */
+  .slidercontent h2{
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .slidercontent h4{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .slidercontent h4:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #c95433;
+    left: 0px;
+    top: 15px;
+    display: block;
+  }
+  .slidercontent p{
+    max-width: 500px;
+    font-size: 9px;
+    line-height: 10px;
+    margin-top: 2px;
+  }
+  .slidercontent button{
+    background: #c95433;
+    /* padding: 14px 30px; */
+    border-radius: 50px;
+    color: #ffffff;
+    position: relative;
+    top: 0px;
+    letter-spacing: 1px;
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+  }
 
 /*--------------------------------------------------------------
 # About Us
