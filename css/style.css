@@ -465,7 +465,7 @@ section {
     background-attachment: fixed;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 /*   #hero h2 {
     background-color: red;
     font-size: 18px;
